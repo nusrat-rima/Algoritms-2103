@@ -1,6 +1,13 @@
 #include <iostream>
 using namespace std;
-void display_array(int arr[], int size);
+void display_array(int arr[], int size)
+{
+  for (int i = 0; i < size; i++)
+  {
+    cout << arr[i] << " ";
+  }
+  cout << endl;
+}
 int main()
 {
   int arr[10] = {7, 8, 12, 27, 88};
@@ -16,12 +23,4 @@ int main()
   size += 1;
   cout << "after insertion:" << endl;
   display_array(arr, size);
-}
-void display_array(int arr[], int size)
-{
-  for (int i = 0; i < size; i++)
-  {
-    cout << arr[i] << " ";
-  }
-  cout << endl;
 }
